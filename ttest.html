@@ -1,0 +1,417 @@
+<div id="app" class="wrap not-select" style="height: 520px; width: 741.333px;">
+    <!-- 顶部 titlebar -->
+    <div class="head">
+        <div class="head-left">
+            <h1>教材同步+方位介词（一）+听力训练</h1>
+        </div>
+        <div class="head-right flex-box-center">
+            <div class="teacher-name">
+                主讲老师：
+                <span>刘伟义</span>
+            </div>
+            <div class="teacher-img">
+                <img src="http://ek.xesimg.com/teacher/2018/08/09/15338098847629.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="down-wrap">
+        <div class="video-wrap" style="height: 417px;">
+            <!-- 左侧主视频 -->
+            <video id="video" webkit-playsinline="" playsinline="" autoplay="autoplay"
+                   src="http://replay.xesv5.com/livecourse/7f1fa3fa761bd435314c6376e8262f81117148.flv.mp4">
+            </video>
+
+            <div id="h5SourceShow" style="height: 100%; width: calc(100% + 1px); display: none; position: absolute;">
+                <iframe src="" scrolling="no" class="iframe" width="100%" height="100%" frameborder="0"></iframe>
+            </div>
+
+            <div class="left-content" style="width: 75%; display: none;">
+                <div class="content-video" style="display: none;">
+                    <div class="video-message" style="display: none;"></div>
+                    <div class="loading-gif" style="display: none;">
+                        <img src="//res11.xesimg.com/video/live/img/pc/loading-gif.gif" alt="" class="gif">
+                    </div>
+                </div>
+
+                <div class="alert alert-question2Sure" style="display: none;">
+                    <div class="content"><p>题目尚未做完，是否确认提交？</p>
+                        <button class="questionBtn questionSureBtn">确认</button>
+                        <button class="questionBtn">取消</button>
+                    </div>
+                </div>
+
+                <div class="alert alert-testQuestions" style="display: none;">
+                    <div class="content"><img src="//res13.xesimg.com/video/live/img/layerBox.png" alt="" class="bgImg">
+                        <div class="tipsHeader">测试提醒</div>
+                        <div class="tipsInfoBox"><p class="tipsInfo">老师发布了一道测试题，<br>是否现在开始答题？</p></div>
+                        <div class="tipsIconBox"><img src="//res14.xesimg.com/video/live/img/layerIcon.png"></div>
+                        <div class="butnBox"><a href="###" class="btn red left alerttestQuestions">立刻答题</a> <a
+                                href="###" class="btn blue right skiptestQuestions">继续听课</a></div>
+                    </div>
+                </div>
+
+                <div class="alert alert-tingdongleme not-select" style="display: none;">
+                    <div class="content"><img src="//res15.xesimg.com/video/live/img/tingdongleme.png" alt="">
+                        <button class="close-btn"><img src="//res16.xesimg.com/video/live/img/close-btn.png" alt="">
+                        </button>
+                        <button class="meitingdong">没听懂</button>
+                        <button class="tingdongle">听懂了</button>
+                        <div class="time-down">
+                            本窗口
+                            <span class="second"></span>
+                            秒后自动关闭
+                        </div>
+                    </div>
+                </div>
+
+                <div class="alert alert-hongbao alert-lingdaohongbao" style="display: none;">
+                    <div class="content"><img src="//res11.xesimg.com/video/live/img/pc/lingdaohongbao-nolights.png"
+                                              alt="" class="back-img"> <img
+                            src="//res12.xesimg.com/video/live/img/pc/lingts-jinbi.png" alt=""
+                            class="lights lights-jinbi">
+                        <button class="close-btn"></button>
+                        <span class="jinbi jinbi-rotate">+0</span>
+                        <div class="time-down">
+                            本窗口
+                            <span class="second"></span>
+                            秒后自动关闭
+                        </div>
+                    </div>
+                </div>
+
+                <div class="alert alert-hongbao" style="display: none;">
+                    <div class="content"><img src="//res14.xesimg.com/video/live/img/lingquhongbao.png" alt="">
+                        <button class="close-btn"></button>
+                        <div class="hongBaoBtnBox">
+                            <button class="lingquhongbao">领取</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="alert alert-dacuole" style="display: none;">
+                    <div class="content">
+                        <div class="lights-wrap"></div>
+                        <img alt="" src="//res16.xesimg.com/video/live/img/dacuole-nolights.png" class="content-img">
+                    </div>
+                </div>
+                <div class="alert alert-daduile" style="display: none;">
+                    <div class="content">
+                        <div class="lights-wrap"></div>
+                        <img alt="" src="//res17.xesimg.com/video/live/img/daduile-nolights.png" class="content-img">
+                    </div>
+                </div>
+                <div class="alert alert-daduilejinbi" style="display: none;">
+                    <div class="content">
+                        <div class="lights-wrap"></div>
+                        <img alt="" src="//res11.xesimg.com/video/live/img/daduilejinbi-nolights.png"
+                             class="content-img">
+                        <div class="jinbi-wrap"><span class="jinbi">0</span></div>
+                    </div>
+                </div>
+                <div class="alert alert-bufendadui" style="display: none;">
+                    <div class="content">
+                        <div class="lights-wrap"></div>
+                        <img alt="" src="//res12.xesimg.com/video/live/img/bufendadui-nolights.png" class="content-img">
+                    </div>
+                </div>
+                <div class="alert alert-bufendaduijinbi" style="display: none;">
+                    <div class="content">
+                        <div class="lights-wrap"></div>
+                        <img alt="" src="//res13.xesimg.com/video/live/img/bufendaduijinbi-nolights.png"
+                             class="content-img">
+                        <div class="jinbi-wrap"><span class="jinbi">0</span></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="right-wrap">
+                <div class="right-content">
+                    <div class="head flex-box-center">
+                        <div id="people-num"><img src="//res14.xesimg.com/video/live/img/pc/zaixianrenshu.png" alt="">
+                            组内
+                        </div>
+                        <div class="im-controls">
+                            <div id="im-clear-btn" class="button green-button"></div>
+                            <div id="im-lock-btn" class="button red-button"></div>
+                            <div id="im-un-lock-btn" class="button red-button" style="display: none;"></div>
+                        </div>
+                    </div>
+                    <div class="content-im">
+                        <div><p class="grey stu"><span>季祥:</span> <span><img
+                                src="//res16.xesimg.com/video/live/img/pc/icons/em_16.png"></span></p> <!----> <!---->
+                            <!----></div>
+                        <div><p class="grey stu"><span>practice(洪嘉骏):</span> <span>xian</span></p> <!----> <!---->
+                            <!----></div>
+                        <div><p class="grey stu"><span>king(王驰):</span> <span>OK</span></p> <!----> <!----> <!---->
+                        </div>
+                        <div><p class="grey stu"><span>Linda(李玥):</span> <span>刘老好大</span></p> <!----> <!----> <!---->
+                        </div>
+                        <div><p class="grey stu"><span>王博远:</span> <span>我又来上课了呜呜呜</span></p> <!----> <!----> <!---->
+                        </div>
+                        <div><p class="grey stu"><span>陈孟凡:</span> <span><img
+                                src="//res16.xesimg.com/video/live/img/pc/icons/em_16.png"></span></p> <!----> <!---->
+                            <!----></div>
+                        <div><p class="grey stu"><span>杜碧珊:</span> <span><img
+                                src="//res16.xesimg.com/video/live/img/pc/icons/em_16.png"></span></p> <!----> <!---->
+                            <!----></div>
+                        <div><p class="grey stu"><span>linlin(林琳):</span> <span>ok</span></p> <!----> <!----> <!---->
+                        </div>
+                        <div><p class="grey stu"><span>柴雨伶:</span> <span><img
+                                src="//res16.xesimg.com/video/live/img/pc/icons/em_16.png"></span></p> <!----> <!---->
+                            <!----></div>
+                        <div><p class="grey stu"><span>Frank(周景晖):</span> <span>有点大</span></p> <!----> <!----> <!---->
+                        </div>
+                        <div><p class="grey stu"><span>张雨菲:</span> <span>OK</span></p> <!----> <!----> <!----></div>
+                        <div><p class="grey stu"><span>Alan(李昊朗):</span> <span><img
+                                src="//res16.xesimg.com/video/live/img/pc/icons/em_16.png"></span></p> <!----> <!---->
+                            <!----></div>
+                        <div><p class="grey stu"><span>侯浚源:</span> <span><img
+                                src="//res16.xesimg.com/video/live/img/pc/icons/em_16.png"></span></p> <!----> <!---->
+                            <!----></div>
+                        <div><p class="grey stu"><span>林毅:</span> <span>打了一点</span></p> <!----> <!----> <!----></div>
+                        <div><p class="grey stu"><span>刘傲水:</span> <span><img
+                                src="//res16.xesimg.com/video/live/img/pc/icons/em_1.png"></span></p> <!----> <!---->
+                            <!----></div>
+                        <div><p class="grey stu"><span>李旺盛:</span> <span>卡卡卡</span></p> <!----> <!----> <!----></div>
+                        <div><p class="grey stu"><span>Tony(陈俊含):</span> <span>小</span></p> <!----> <!----> <!---->
+                        </div>
+                        <div><p class="grey stu"><span>Toby(严扬):</span> <span>大</span></p> <!----> <!----> <!----></div>
+                        <div><p class="grey stu"><span>lucy(李诺言):</span> <span>haoOK</span></p> <!----> <!----> <!---->
+                        </div>
+                        <div><p class="grey stu"><span>杨逸萱:</span> <span><img
+                                src="//res16.xesimg.com/video/live/img/pc/icons/em_16.png"></span></p> <!----> <!---->
+                            <!----></div>
+                        <div><p class="grey stu"><span>Bobby(王艺博):</span> <span><img
+                                src="//res16.xesimg.com/video/live/img/pc/icons/em_16.png"></span></p> <!----> <!---->
+                            <!----></div>
+                        <div><p class="grey stu"><span>张驰:</span> <span>666</span></p> <!----> <!----> <!----></div>
+                        <div><p class="grey stu"><span>王煊昊:</span> <span><img
+                                src="//res16.xesimg.com/video/live/img/pc/icons/em_16.png"></span></p> <!----> <!---->
+                            <!----></div>
+                        <div><p class="grey stu"><span>王文琦:</span> <span><img
+                                src="//res16.xesimg.com/video/live/img/pc/icons/em_15.png"></span></p> <!----> <!---->
+                            <!----></div>
+                        <div><p class="grey stu"><span>Cindy(刘炫辛):</span> <span>老师你调大了点儿太大了吧。</span></p> <!----> <!---->
+                            <!----></div>
+                        <div><p class="grey stu"><span>范芯梦:</span> <span>挺好的</span></p> <!----> <!----> <!----></div>
+                        <div><p class="grey stu"><span>hxt(黄欣婷):</span> <span><img
+                                src="//res16.xesimg.com/video/live/img/pc/icons/em_16.png"></span></p> <!----> <!---->
+                            <!----></div>
+                        <div><p class="grey stu"><span>小杨:</span> <span>还好</span></p> <!----> <!----> <!----></div>
+                        <div><p class="grey stu"><span>吴博宇:</span> <span>很好</span></p> <!----> <!----> <!----></div>
+                        <div><p class="grey stu"><span>魏子琪:</span> <span><img
+                                src="//res16.xesimg.com/video/live/img/pc/icons/em_16.png"></span></p> <!----> <!---->
+                            <!----></div>
+                        <div><p class="grey stu"><span>谢锦华:</span> <span><img
+                                src="//res16.xesimg.com/video/live/img/pc/icons/em_16.png"></span></p> <!----> <!---->
+                            <!----></div>
+                        <div><p class="grey stu"><span>柴雨伶:</span> <span><img
+                                src="//res16.xesimg.com/video/live/img/pc/icons/em_16.png"></span></p> <!----> <!---->
+                            <!----></div>
+                        <div><p class="grey stu"><span>章宸鸣:</span> <span><img
+                                src="//res16.xesimg.com/video/live/img/pc/icons/em_16.png"></span></p> <!----> <!---->
+                            <!----></div>
+                        <div><p class="grey stu"><span>庞子望:</span> <span><img
+                                src="//res16.xesimg.com/video/live/img/pc/icons/em_16.png"></span></p> <!----> <!---->
+                            <!----></div>
+                        <div><p class="grey stu"><span>Abby(蒋文韵):</span> <span><img
+                                src="//res16.xesimg.com/video/live/img/pc/icons/em_16.png"></span></p> <!----> <!---->
+                            <!----></div>
+                        <div><p class="grey stu"><span>高涵悦:</span> <span>ok</span></p> <!----> <!----> <!----></div>
+                        <div><p class="grey stu"><span>赵婉彤:</span> <span>正好</span></p> <!----> <!----> <!----></div>
+                        <div><p class="grey stu"><span>Bobby(王艺博):</span> <span><img
+                                src="//res16.xesimg.com/video/live/img/pc/icons/em_16.png"></span></p> <!----> <!---->
+                            <!----></div>
+                        <div><p class="grey stu"><span>姚俊熙:</span> <span>大</span></p> <!----> <!----> <!----></div>
+                        <div><p class="grey stu"><span>林毅:</span> <span>不大</span></p> <!----> <!----> <!----></div>
+                        <div><p class="grey stu"><span>徐瑞遥:</span> <span>2164451451545646545456455555553225133213</span>
+                        </p> <!----> <!----> <!----></div>
+                        <div><p class="grey stu"><span>Obry(任郭赐):</span> <span><img
+                                src="//res16.xesimg.com/video/live/img/pc/icons/em_16.png"></span></p> <!----> <!---->
+                            <!----></div>
+                        <div><p class="grey stu"><span>魏子琪:</span> <span><img
+                                src="//res16.xesimg.com/video/live/img/pc/icons/em_16.png"></span></p> <!----> <!---->
+                            <!----></div>
+                        <div><p class="grey stu"><span>曾靖阳:</span> <span>还好</span></p> <!----> <!----> <!----></div>
+                        <div><p class="grey stu"><span>Tom(孙国林):</span> <span><img
+                                src="//res16.xesimg.com/video/live/img/pc/icons/em_16.png"></span></p> <!----> <!---->
+                            <!----></div>
+                        <div><p class="grey stu"><span>张驰:</span> <span><img
+                                src="//res16.xesimg.com/video/live/img/pc/icons/em_16.png"></span></p> <!----> <!---->
+                            <!----></div>
+                        <div><p class="grey stu"><span>lucy(李诺言):</span> <span>好OK</span></p> <!----> <!----> <!---->
+                        </div>
+                        <div><p class="grey stu"><span>linlin(林琳):</span> <span>ok</span></p> <!----> <!----> <!---->
+                        </div>
+                        <div><p class="grey stu"><span>彭俊杰:</span> <span><img
+                                src="//res16.xesimg.com/video/live/img/pc/icons/em_16.png"></span></p> <!----> <!---->
+                            <!----></div>
+                        <div><p class="grey stu"><span>龚睿:</span> <span><img
+                                src="//res16.xesimg.com/video/live/img/pc/icons/em_16.png"></span></p> <!----> <!---->
+                            <!----></div>
+                        <div><p class="grey stu"><span>AlanWalker(胡家铭):</span> <span>卡</span></p> <!----> <!---->
+                            <!----></div>
+                        <div><p class="grey stu"><span>钰琪:</span> <span>有点大</span></p> <!----> <!----> <!----></div>
+                        <div><p class="grey stu"><span>黄嘉俊:</span> <span>正好</span></p> <!----> <!----> <!----></div>
+                        <div><p class="grey stu"><span>Bill(欧阳依达):</span> <span>ok</span></p> <!----> <!----> <!---->
+                        </div>
+                        <div><p class="grey stu"><span>Cherry(李晓乐):</span> <span><img
+                                src="//res16.xesimg.com/video/live/img/pc/icons/em_16.png"></span></p> <!----> <!---->
+                            <!----></div>
+                        <div><p class="grey stu"><span>魏子琪:</span> <span><img
+                                src="//res16.xesimg.com/video/live/img/pc/icons/em_16.png"></span></p> <!----> <!---->
+                            <!----></div>
+                        <div><p class="grey stu"><span>许家绅:</span> <span>不大</span></p> <!----> <!----> <!----></div>
+                        <div><p class="grey stu"><span>柴雨伶:</span> <span><img
+                                src="//res16.xesimg.com/video/live/img/pc/icons/em_16.png"></span></p> <!----> <!---->
+                            <!----></div>
+                        <div><p class="grey stu"><span>lucy(郭仪):</span> <span>在大</span></p> <!----> <!----> <!---->
+                        </div>
+                        <div><p class="grey stu"><span>李旺盛:</span> <span>上课卡</span></p> <!----> <!----> <!----></div>
+                        <div class="im-message" style="display: none;">
+                            <div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bottom-wrap">
+            <div class="bottom-control">
+                <div class="video-route-content flower-content" style="display: none;">
+                    <div data-selectid="flower" class="left">
+                        <div class="flower"><img src="//res12.xesimg.com/video/live/img/pc/flower1.png" alt="">
+                            <div class="flower-desc"><p class="flower-name">
+                                一枝玫瑰
+                            </p>
+                                <p class="flower-price"><span>100</span>
+                                    金币
+                                </p></div>
+                            <img src="//res13.xesimg.com/video/live/img/pc/flower-no-select2.png" alt=""
+                                 class="flower-select-flag flag-no-select"> <img
+                                    src="//res12.xesimg.com/live/img/x5live/flower-select.png" alt=""
+                                    class="flower-select-flag flag-select"></div>
+                        <div class="flower"><img src="//res14.xesimg.com/video/live/img/pc/flower2.png" alt="">
+                            <div class="flower-desc"><p class="flower-name">
+                                一束玫瑰
+                            </p>
+                                <p class="flower-price"><span>100</span>
+                                    金币
+                                </p></div>
+                            <img src="//res15.xesimg.com/video/live/img/pc/flower-no-select2.png" alt=""
+                                 class="flower-select-flag flag-no-select"> <img
+                                    src="//res13.xesimg.com/live/img/x5live/flower-select.png" alt=""
+                                    class="flower-select-flag flag-select"></div>
+                        <div class="flower"><img src="//res16.xesimg.com/video/live/img/pc/flower3.png" alt="">
+                            <div class="flower-desc"><p class="flower-name">
+                                蓝色妖姬
+                            </p>
+                                <p class="flower-price"><span>100</span>
+                                    金币
+                                </p></div>
+                            <img src="//res17.xesimg.com/video/live/img/pc/flower-no-select2.png" alt=""
+                                 class="flower-select-flag flag-no-select"> <img
+                                    src="//res14.xesimg.com/live/img/x5live/flower-select.png" alt=""
+                                    class="flower-select-flag flag-select"></div>
+                    </div>
+                    <div class="right">
+                        <div class="desc">
+                            我的金币余额：
+                            <span>0</span></div>
+                        <div class="flower-confirm">
+                            <button>
+                                提交
+                            </button>
+                        </div>
+                    </div>
+                </div> <!---->  <!---->   <!---->
+
+                <div class="playtime-control">
+                    <div class="playtime-control-inner"></div>
+                    <div class="point-time" style="left: 300.667px; display: none;">58:20</div>
+                    <div class="bufferd-bar" style="width: 1%;"></div>
+                    <div class="played" style="width: 6px;">
+                        <div class="played-bar"></div>
+                        <div class="played-slide">
+                            <div class="played-slide-btn"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="video-controls"
+                     data-xeslog-params="key=xeslog_moreSpeed_0_video&amp;action=click_videoControlsBar_hideSpeedPanel&amp;liveId=117148"
+                     class="video-controls">
+                    <div class="play-pause">
+                        <div class="button blue-button play-button" style="display: none;"><img
+                                src="//res11.xesimg.com/video/live/img/pc/video-play.png" alt=""></div>
+                        <div class="button blue-button pause-button" style=""><img
+                                src="//res12.xesimg.com/video/live/img/pc/video-pause.png" alt=""></div>
+                    </div>
+                    <div id="play-more-speed"
+                         data-xeslog-params="key=xeslog_moreSpeed_0_video&amp;action=click_moreSpeedBtn_1.0_showSpeedPanel&amp;liveId=117148"
+                         class="play-more-speed">
+                        1.0x
+                        <div class="moreSpeed-box" style="display: none;">
+                            <ul>
+                                <li data-xeslog-params="key=xeslog_moreSpeed_0_video&amp;action=click_selectPlaySpeed_2.0&amp;liveId=117148">
+                                    2.0x
+                                </li>
+                                <li data-xeslog-params="key=xeslog_moreSpeed_0_video&amp;action=click_selectPlaySpeed_1.5&amp;liveId=117148">
+                                    1.5x
+                                </li>
+                                <li data-xeslog-params="key=xeslog_moreSpeed_0_video&amp;action=click_selectPlaySpeed_1.25&amp;liveId=117148">
+                                    1.25x
+                                </li>
+                                <li data-xeslog-params="key=xeslog_moreSpeed_0_video&amp;action=click_selectPlaySpeed_1.0&amp;liveId=117148">
+                                    1.0x
+                                </li>
+                                <li data-xeslog-params="key=xeslog_moreSpeed_0_video&amp;action=click_selectPlaySpeed_0.8&amp;liveId=117148">
+                                    0.8x
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="play-time"><span>01:07</span>/
+                        <span>134:48</span></div>
+                    <div class="voice-control">
+                        <div class="voice-img"><img src="//res15.xesimg.com/live/img/x5live/voice-0-gray.png" alt=""
+                                                    style="display: none;"> <img
+                                src="//res16.xesimg.com/live/img/x5live/voice-1-gray.png" alt="" style="display: none;">
+                            <img src="//res17.xesimg.com/live/img/x5live/voice-2-gray.png" alt=""></div>
+                        <div class="voice-wrap">
+                            <div class="el-slider"><!---->
+                                <div class="el-slider__runway">
+                                    <div class="el-slider__bar" style="width: 50%;"></div>
+                                    <div class="el-slider__button-wrapper" style="left: 50%;">
+                                        <div class="el-tooltip">
+                                            <div class="el-tooltip__rel">
+                                                <div class="el-slider__button"></div>
+                                            </div>
+                                        </div>
+                                    </div><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!---->
+                                    <!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!---->
+                                    <!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!---->
+                                    <!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!---->
+                                    <!----><!----></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="space"></div>
+                    <div class="full-control">
+                        <div class="botton-wrap">
+                            <div class="button blue-button full-app-control-false popper"><img
+                                    src="//res17.xesimg.com/video/live/img/pc/svg/app-shirk.svg" alt=""> <span
+                                    class="popper-up">全屏</span></div>
+                            <div class="button blue-button full-app-control-true popper" style="display: none;"><img
+                                    src="//res11.xesimg.com/video/live/img/pc/svg/app-full.svg" alt=""> <span
+                                    class="popper-up">退出全屏</span></div>
+                            <div class="button-disable popper" style="display: none;"><span class="popper-up">退出播放器全屏可以设置网页全屏</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
